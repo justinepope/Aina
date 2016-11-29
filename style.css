@@ -1,0 +1,456 @@
+/*
+Theme Name: aina
+Author: Justine Pope
+Author URI: http://wordpress.org/ 
+Description: This is a retro rustic tropical theme for small hotels with a flexible layout that looks great on any device, big or small.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: orange, blue, tan, brown,
+Text Domain: ainatheme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* GLOBAL STYLE */
+
+body {
+	background: url('images/wood.jpg');
+	font-family: Passion One;
+	font-weight: 100;
+	font-size: 2.5em;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+}
+img {
+	max-width: 100%;
+}
+
+header .category {
+    color: #f3e2c6;
+    font-family: 'Pacifico';
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Theme Image Maximum Content Width */
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+
+/*== NAVBAR SECTION ==*/
+
+.navbar-default {
+  background-color: #e45d40;
+  border-color: #1698b2;
+}
+.navbar-default .navbar-brand {
+  color: #f3e2c6;
+  padding: 5px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f3e2c6;
+}
+.navbar-default .navbar-text {
+  color: #f3e2c6;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #f3e2c6;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f3e2c6;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color: #e45d40;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #f3e2c6;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #f3e2c6;
+  background-color: #1698b2;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #1698b2;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+  color: #f3e2c6;
+  background-color: #1698b2;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f3e2c6;
+  background-color: #1698b2;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #f3e2c6;
+  background-color: #1698b2;
+}
+.navbar-default .navbar-toggle {
+  border-color: #1698b2;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #1698b2;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #f3e2c6;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #f3e2c6;
+}
+.navbar-default .navbar-link {
+  color: #f3e2c6;
+}
+.navbar-default .navbar-link:hover {
+  color: #f3e2c6;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #f3e2c6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f3e2c6;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f3e2c6;
+    background-color: #1698b2;
+  }
+}
+
+a.navbar-brand .pagescroll {
+    padding-bottom: 20px;
+}
+
+/*=== FEATURE SECTION ===*/
+
+.feature img {
+	width: 100%;
+}
+
+.feature {
+  position: relative;
+}
+.feature-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  font-size: 0;  /* removes the gap between elements that is caused by using inline-block */
+}
+.feature-text:before {
+	 content:'';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.feature-text p {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  font-size: 150px;
+  padding-left: 20px;
+  color: #e45d40;
+}
+
+/*=== WELCOME SECTION ===*/
+
+#welcome {
+	background-color: rgba(243, 226, 198, 0.85);
+	margin-top: 75px;
+	margin-bottom: 25px;
+	padding: 25px 25px 25px 25px;
+}
+
+#welcome h1 {
+	margin-top: 50px;
+	padding-bottom: 25px;
+	color: #1698b2;
+	font-family: 'Pacifico';
+	font-size: 45px;
+}
+
+
+
+/*=== ABOUT SECTION ===*/
+
+#about {
+	background-color: rgba(228, 93, 64, 0.85);
+	margin-top: 75px;
+	margin-bottom: 25px;
+	padding: 0 25px 25px 25px;
+}
+
+#about h1 {
+	margin-top: 50px;
+	padding-bottom: 25px;
+	color: #f3e2c6;
+	font-family: 'Pacifico';
+	font-size: 45px;
+}
+
+#about p {
+	font-family: 'Cherry Cream Soda';
+	font-size: 25px;
+	color: #281f23;
+	text-align: center;
+	padding: 0 60px 0 60px; 
+}
+
+#about .quote {
+	text-align: right;
+}
+
+.about-aina {
+	border-bottom: 15px solid #1698b2;
+	border-top: 15px solid #1698b2;
+}
+
+/*=== lodging SECTION ===*/
+
+#lodging{
+	background-color: rgba(22, 152, 178, 0.65);
+	margin-top: 75px;
+	margin-bottom: 50px;
+	padding: 25px 25px 0 50px;
+}
+
+#lodging h1 {
+	margin-top: 50px;
+	color: #e45d40;
+	font-family: 'Pacifico';
+	font-size: 50px;
+}
+
+#lodging p {
+	font-family: 'Pacifico';
+	color: #f3e2c6;
+	padding-bottom: 50px;
+	margin-bottom: 25px;
+}
+
+#lodging .lodging-text p {
+	font-family: 'Cherry Cream Soda';
+	font-size: 25px;
+	text-align: center;
+}
+
+/* Background picture opacity */
+
+#lodging .container-fluid {
+    background: rgba(22, 152, 178, 0.65);
+    overflow: hidden;
+    position: relative;
+}
+#lodging .container-fluid:after {
+    content: ' ';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('http://pccwebdesign.com/student215/project/wp-content/uploads/2016/06/pond.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+/*=== FOOTER SECTION ===*/
+
+footer{
+	background-color: rgba(40, 32, 35, 0.90);
+	margin-top: 100px;
+	margin-bottom: 25px;
+	padding: 25px 25px 0 50px;
+	color: #e45d40;
+	font-family: 'Cherry Cream Soda';
+	font-size: 25px;
+}
+
+footer .btn.btn-default {
+	margin-bottom: 35px;
+	color: #e45d40;
+	background-color: rgba(40, 32, 35, 0.10);
+	border: none; 
+}
+
+footer a {
+	color: #1698b2;
+}
+
+footer a:hover {
+	color: #f3e2c6;
+}
+
+footer .copyright {
+	font-family: 'Pacifico';
+	color: #f3e2c6;
+}
+/*=== BLOG PAGE ===*/
+ 
+#aina-blog {
+	background-color: rgba(22, 152, 178, 0.85);
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 25px 25px 0 50px;
+	border-top: 15px solid #e45d40;
+	border-bottom: 15px solid #e45d40;
+}
+
+#aina-blog blockquote {
+	border-left: 5px solid #f3e2c6;
+}
+
+.blog-post h2 {
+	color: #f3e2c6;
+	font-family: 'Cherry Cream Soda';
+	font-size: 45px;
+	text-decoration: overline;
+}
+
+.blog-post p {
+	font-size: 30px;
+	font-stretch: expanded;
+}
+#aina-blog blockquote {
+	border-left: 5px solid #f3e2c6;
+}
+
+.blog-post a {
+	color: #e45d40;
+	font-family: 'Pacifico';
+}
+
+.blog-post a:hover {
+	color: #e45d40;
+}
+
+.blog-sidebar{
+	margin-top: 25px;
+}
+.sidebar-module h4{
+	color: #f3e2c6;
+	font-size: 30px;
+	font-family: 'Cherry Cream Soda';
+	text-decoration: overline;
+}
+
+.sidebar-module p {
+	font-size: 25px;
+}
+
+.list-unstyled li a {
+	color: #e45d40;
+	font-family: 'Pacifico';
+	font-size: 25px;
+}
+
+.list-unstyled li a:hover {
+	color: #f3e2c6;
+}
+
+nav .pager li a {
+	color: #1698b2;
+	border: #1698b2;
+	background-color: #281f23;
+	font-family: 'Pacifico';
+}
+
+#comments {
+    color: #f3e2c6;
+}
+
+#comments a {
+    color: #1698b2;
+    font-family: 'Pacifico';
+}
+
+/*=== CONTACT SECTION ===*/
+
+#contact {
+	font-family: 'Cherry Cream Soda';
+	padding-left: 2%;
+	background-color: rgba(243, 226, 198, 0.85); 
+	margin-top: 50px;
+	margin-bottom: 50px;
+	border-top: 15px solid #e45d40;
+	border-bottom: 15px solid #e45d40;
+}
+
+#contact h1 {
+	margin-top: 50px;
+	padding-bottom: 50px;
+	color: #1698b2;
+	font-family: 'Pacifico';
+	font-size: 45px;
+}
+
+#contact a {
+	color: #1698b2;	
+}
+
+#contact-form {
+	padding-bottom: 2%;
+}
+
+#contact-form h1 {
+	text-decoration: overline;
+}
+
+#contact-form .checkbox {
+	font-family: 'Pacifico';
+	color: #1698b2;
+}
+
+/*=== SIDEBAR ===*/
+
+#bottombar {
+    padding: 10px;
+}
+
+#rightbar {
+    padding: 10px;
+}
+
+
+
+
+/*=== MEDIA QUERIES ===*/
+
+@media (max-width: 767px) {
+	
+	.feature-text p {
+		font-size: 50px;
+	}
+	
+}
+
+  /* used for xs devices */
+
